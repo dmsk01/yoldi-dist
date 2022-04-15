@@ -4303,14 +4303,12 @@
                 observeParents: true,
                 slidesPerView: 3,
                 spaceBetween: 0,
-                autoHeight: true,
                 speed: 800,
                 loop: false,
                 breakpoints: {
                     320: {
                         slidesPerView: 1.3,
-                        spaceBetween: 15,
-                        autoHeight: true
+                        spaceBetween: 15
                     },
                     768: {
                         slidesPerView: 3,
