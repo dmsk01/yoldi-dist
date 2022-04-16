@@ -4288,7 +4288,7 @@
                     crossFade: true
                 },
                 autoplay: {
-                    delay: 3e3,
+                    delay: 4e3,
                     disableOnInteraction: false
                 },
                 pagination: {
@@ -4322,12 +4322,19 @@
             initSliders();
         }));
         var lazyload_min = __webpack_require__(732);
-        const lazyMedia = new lazyload_min({
-            elements_selector: "[data-src],[data-srcset]",
-            class_loaded: "_lazy-loaded",
-            use_native: true
-        });
-        lazyMedia.update();
+        if ("loading" in HTMLImageElement.prototype) {
+            const images = document.querySelectorAll("img.lazyload");
+            images.forEach((img => {
+                img.src = img.dataset.src;
+            }));
+        } else {
+            const lazyMedia = new lazyload_min({
+                elements_selector: "[data-src],[data-srcset]",
+                class_loaded: "_lazy-loaded",
+                use_native: true
+            });
+            lazyMedia.update();
+        }
         let addWindowScrollEvent = false;
         function pageNavigation() {
             document.addEventListener("click", pageNavigationAction);
