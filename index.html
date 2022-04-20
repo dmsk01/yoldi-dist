@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
+<!-- In order to highlight active header link pass in title exactly equal link text content -->
 
 <head>
 	<title>Nuero</title>
 	<meta charset="UTF-8" />
 	<meta name="format-detection" content="telephone=no" />
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220416152538" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20220420200051" />
 	<link rel="shortcut icon" href="favicon.ico" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body>
+
+<body id="nuero-body">
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__wrapper">
@@ -126,10 +128,10 @@
 													<a area-label="Сайт" href="#" class="menu-tabs__link">Пункт 1</a>
 												</li>
 												<li class="menu-tabs__subitem">
-													<a area-label="Сайт Продавай РФ" href="#" class="menu-tabs__link">Продавай РФ</a>
+													<a area-label="Сайт Продавай РФ" href="sell.html" class="menu-tabs__link">Продавай РФ</a>
 												</li>
 												<li class="menu-tabs__subitem">
-													<a area-label="Сайт Nuero" href="#" class="menu-tabs__link _active">Nuero</a>
+													<a area-label="Сайт Nuero" href="index.html" class="menu-tabs__link">Nuero</a>
 												</li>
 											</ul>
 										</nav>
@@ -175,7 +177,7 @@
 								<span class="tag">Ethereum</span>
 							</li>
 							<li class="tags__item">
-								<span class="tag">Type-script</span>
+								<span class="tag">Typescript</span>
 							</li>
 							<li class="tags__item">
 								<span class="tag">PHP</span>
@@ -278,7 +280,9 @@
 						</aside>
 					</div>
 					<div class="nuero-about__users users-about">
-						<h3 class="users-about__title subtitle subtitle_dark subtitle_noshrink">Пользователи</h3>
+						<div class="users-about__head">
+							<h3 class="users-about__title subtitle subtitle_dark subtitle_noshrink">Пользователи</h3>
+						</div>
 						<div class="users-about__inner">
 							<div class="users-about__user about-user">
 								<h4 class="about-user__title subtitle subtitle_dark subtitle_thin">Художники</h4>
@@ -352,12 +356,16 @@
 
 						<article id="art-page" class="nuero-main-composition__art-page art-page">
 							<div class="art-page__info info-block">
-								<h3 class="info-block__title title">Страница арта</h3>
-								<p class="info-block__text text">
-									На странице арта находится более подробная информация по каждому
-									арту. Тут отображается описание, технические характеристики,
-									финансовые показатели и прочая информация.
-								</p>
+								<div class="info-block__heading">
+									<h3 class="info-block__title title">Страница арта</h3>
+								</div>
+								<div class="info-block__content">
+									<p class="info-block__text text">
+										На странице арта находится более подробная информация по каждому
+										арту. Тут отображается описание, технические характеристики,
+										финансовые показатели и прочая информация.
+									</p>
+								</div>
 							</div>
 							<div class="art-page__content">
 								<div class="couple-images">
@@ -396,9 +404,11 @@
 
 						<article id="operations-nuero" class="nuero-main-composition__transaction-operations transaction-composition">
 							<div class="transaction-composition__info info-block info-block_long">
-								<h3 class="transaction-composition__title info-block__title title">
-									Операции&nbsp;и транзакции
-								</h3>
+								<div class="info-block__heading">
+									<h3 class="transaction-composition__title info-block__title title">
+										Операции&nbsp;и транзакции
+									</h3>
+								</div>
 								<div class="info-block__content">
 									<p class="info-block__text text">
 										Все виды обмена используют смарт-контракты Etereum. Пользователи
@@ -449,12 +459,16 @@
 
 						<article id="bid-tracking" class="nuero-main-composition__bid-tracking bid-tracking">
 							<div class="bid-tracking__info info-block">
-								<h3 class="info-block__title title">Отслеживание торгов</h3>
-								<p class="info-block__text text">
-									Свои активности по маркету пользователи могут отслеживать в разделе
-									Торги. Тут хранится вся история покупок и продаж, предложений и
-									участия в аукционах.
-								</p>
+								<div class="info-block__heading">
+									<h3 class="info-block__title title">Отслеживание торгов</h3>
+								</div>
+								<div class="info-block__content">
+									<p class="info-block__text text">
+										Свои активности по маркету пользователи могут отслеживать в разделе
+										Торги. Тут хранится вся история покупок и продаж, предложений и
+										участия в аукционах.
+									</p>
+								</div>
 							</div>
 							<div class="bid-tracking__content">
 								<div class="couple-images">
@@ -472,14 +486,18 @@
 
 						<article id="verification" class="nuero-main-composition__artists-verification artists-verification">
 							<div class="artists-verification__info info-block">
-								<h3 class="info-block__title title">Верификация художников</h3>
-								<p class="info-block__text text">
-									Площадка Nuero ответственно подходит к размещаемому на ней контенту.
-									Процедура верификации художников обеспечивает наличие в маркете
-									работ, имеющих высокую художественную ценность. Для того, чтобы арты
-									попали в маркет автор должен пройти верификацию — заполнить свой
-									профиль и указать соцсети.
-								</p>
+								<div class="info-block__heading">
+									<h3 class="info-block__title title">Верификация художников</h3>
+								</div>
+								<div class="info-block__content">
+									<p class="info-block__text text">
+										Площадка Nuero ответственно подходит к размещаемому на ней контенту.
+										Процедура верификации художников обеспечивает наличие в маркете
+										работ, имеющих высокую художественную ценность. Для того, чтобы арты
+										попали в маркет автор должен пройти верификацию — заполнить свой
+										профиль и указать соцсети.
+									</p>
+								</div>
 							</div>
 							<div class="artists-verification__content">
 								<div class="triple-images">
@@ -500,12 +518,16 @@
 
 						<article id="nuero-users-catalog" class="nuero-main-composition__users-catalog users-catalog">
 							<div class="users-catalog__info info-block info-block_long">
-								<h3 class="info-block__title title">Каталог пользователей</h3>
-								<p class="info-block__text users-catalog__text text">
-									Пользователи могут находить людей и следить за интересными авторами
-									и коллекционерами, чтобы получать актуальные обновления по их
-									публикациям, новым работам и приобритениям.
-								</p>
+								<div class="info-block__heading">
+									<h3 class="info-block__title title">Каталог пользователей</h3>
+								</div>
+								<div class="info-block__content">
+									<p class="info-block__text users-catalog__text text">
+										Пользователи могут находить людей и следить за интересными авторами
+										и коллекционерами, чтобы получать актуальные обновления по их
+										публикациям, новым работам и приобритениям.
+									</p>
+								</div>
 							</div>
 							<div class="users-catalog__content">
 								<div class="couple-images">
@@ -523,12 +545,16 @@
 
 						<article class="nuero-main-composition__users-page users-page">
 							<div class="users-page__info info-block">
-								<h3 class="info-block__title title">Cтраница пользователя</h3>
-								<p class="info-block__text text">
-									При помощи страницы пользователя можно узнать подробную информацию о
-									нем, посмотреть его коллекции, а также подписаться или написать
-									сообщение.
-								</p>
+								<div class="info-block__heading">
+									<h3 class="info-block__title title">Cтраница пользователя</h3>
+								</div>
+								<div class="info-block__content">
+									<p class="info-block__text text">
+										При помощи страницы пользователя можно узнать подробную информацию о
+										нем, посмотреть его коллекции, а также подписаться или написать
+										сообщение.
+									</p>
+								</div>
 							</div>
 							<div class="users-page__content">
 								<div class="couple-images couple-images_big">
@@ -546,14 +572,18 @@
 
 						<article id="nuero-chats" class="nuero-main-composition__chats chats-nuero">
 							<div class="chats-nuero__info info-block info-block_long">
-								<h3 class="info-block__title chats-nuero__title title">Чаты</h3>
-								<p class="info-block__text text">
-									Nuero приветствует общение между участниками площадки — поэтому в
-									интерфейсе маркетплейса предусмотрен полноценный мессенджер.
-									Пользователи могут обмениваться сообщениями и прикреплять
-									изображения или ссылки на арты — чтобы познакомиться, обсудить какое
-									то событие или арт, а также договориться о покупке, либо обмене.
-								</p>
+								<div class="info-block__heading">
+									<h3 class="info-block__title chats-nuero__title title">Чаты</h3>
+								</div>
+								<div class="info-block__content">
+									<p class="info-block__text text">
+										Nuero приветствует общение между участниками площадки — поэтому в
+										интерфейсе маркетплейса предусмотрен полноценный мессенджер.
+										Пользователи могут обмениваться сообщениями и прикреплять
+										изображения или ссылки на арты — чтобы познакомиться, обсудить какое
+										то событие или арт, а также договориться о покупке, либо обмене.
+									</p>
+								</div>
 							</div>
 							<div class="chats-nuero__content">
 								<div class="couple-images">
@@ -571,12 +601,16 @@
 
 						<article id="journal-nuero" class="nuero-main-composition__journal journal-nuero">
 							<div class="journal-nuero__info info-block">
-								<h3 class="info-block__title title">Журнал</h3>
-								<p class="info-block__text text">
-									Маркетплейс предлагает своим пользователям полезный и интересный
-									контент на тему NFT искусства. Также пользователи могут создавать
-									свои статьи и наполнять ими раздел "Журнал".
-								</p>
+								<div class="info-block__heading">
+									<h3 class="info-block__title title">Журнал</h3>
+								</div>
+								<div class="info-block__content">
+									<p class="info-block__text text">
+										Маркетплейс предлагает своим пользователям полезный и интересный
+										контент на тему NFT искусства. Также пользователи могут создавать
+										свои статьи и наполнять ими раздел "Журнал".
+									</p>
+								</div>
 							</div>
 							<div class="journal-nuero__content">
 								<div class="couple-images couple-images_big">
@@ -594,11 +628,15 @@
 
 						<article id="nuero-feed-line" class="nuero-main-composition__update-feed-line update-feed-line">
 							<div class="update-feed-line__info info-block">
-								<h3 class="info-block__title title">Лента обновлений</h3>
-								<p class="info-block__text text">
-									Все активности пользователей, включая продажи, ставки на аукционах и
-									публикации новых артов попадают в ленту обновлений — раздел “Новое”.
-								</p>
+								<div class="info-block__heading">
+									<h3 class="info-block__title title">Лента обновлений</h3>
+								</div>
+								<div class="info-block__content">
+									<p class="info-block__text text">
+										Все активности пользователей, включая продажи, ставки на аукционах и
+										публикации новых артов попадают в ленту обновлений — раздел “Новое”.
+									</p>
+								</div>
 							</div>
 							<div class="art-page__content">
 								<div class="couple-images">
@@ -634,7 +672,18 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20220416152538"></script>
+	<div class="float-block">
+		<div class="float-block__inner">
+			<div class="float-block__play">
+				<button class="float-block__button-play"></button>
+			</div>
+			<div class="float-block__ask">
+				<button class="float-block__button-ask">Задать вопрос...</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js?_v=20220420200051"></script>
 </body>
 
 </html>

@@ -380,6 +380,13 @@
                 document.documentElement.classList.add(className);
             }));
         }
+        function addLoadedClass() {
+            window.addEventListener("load", (function() {
+                setTimeout((function() {
+                    document.documentElement.classList.add("loaded");
+                }), 0);
+            }));
+        }
         function getHash() {
             if (location.hash) return location.hash.replace("#", "");
         }
@@ -4383,12 +4390,22 @@
             }
         }), 0);
         const menuLinks = document.querySelectorAll(".menu-tabs__link");
-        menuLinks.forEach((link => {
+        const pageTitle = document.querySelector("title");
+        function addActiveToHeaderLink(pageTitle, link) {
+            pageTitle.textContent === link.textContent ? link.classList.add("_active") : null;
+        }
+        if (menuLinks) menuLinks.forEach((link => {
+            window.addEventListener("load", (function() {
+                setTimeout((function() {
+                    addActiveToHeaderLink(pageTitle, link);
+                }), 0);
+            }));
             link.addEventListener("click", (() => {
                 document.documentElement.classList.remove("menu-open");
             }));
         }));
         isWebp();
+        addLoadedClass();
         menuInit();
         tabs();
         pageNavigation();
