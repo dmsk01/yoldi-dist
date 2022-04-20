@@ -2676,6 +2676,8 @@ body#sell-body::before {
 }
 .sell-mobile-version__image-ibg {
   padding-bottom: 178.2178217822%;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .swiper {
   overflow: hidden;
