@@ -192,6 +192,47 @@ body#sell-body::before {
   object-fit: contain;
 }
 
+.swiper {
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  box-sizing: content-box;
+  display: flex;
+  position: relative;
+}
+
+.swiper-vertical .swiper-wrapper {
+  flex-direction: column;
+}
+
+.swiper-autoheight .swiper-wrapper {
+  align-items: flex-start;
+}
+
+.swiper-initialized .swiper-slide {
+  flex-shrink: 0;
+}
+
+.swiper-android .swiper-slide,
+.swiper-android .swiper-wrapper {
+  transform: translate3d(0px, 0, 0);
+}
+
+.swiper-button-lock {
+  display: none !important;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform, opacity;
+}
+
 .title {
   color: #fff;
   font-size: 60px;
@@ -707,17 +748,16 @@ body#sell-body::before {
   }
 }
 .about-project__subtitle {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 @media (max-width: 48em) {
   .about-project__subtitle {
-    margin-bottom: 5px;
     font-size: 16px;
     line-height: 1.4;
   }
 }
 .about-project__title {
-  margin-bottom: 30px;
+  margin-bottom: 36px;
   font-weight: 700;
   line-height: 1;
 }
@@ -1215,12 +1255,17 @@ body#sell-body::before {
   justify-content: center;
   align-items: center;
   max-width: 800px;
-  margin: 0 auto 60px;
+  margin: 0 auto 64px;
   width: 100%;
   text-align: center;
 }
+@media (max-width: 90em) {
+  .hero__info {
+    margin-bottom: 50px;
+  }
+}
 .hero__year {
-  margin-bottom: 13px;
+  margin-bottom: 10px;
   color: #8a8a97;
 }
 @supports (font-size: clamp( 1.125rem , 0.7998554913rem  +  1.387283237vw , 1.875rem )) {
@@ -1233,18 +1278,18 @@ body#sell-body::before {
     font-size: calc(1.125rem + 0.75 * (100vw - 23.4375rem) / 54.0625);
   }
 }
-@supports (line-height: clamp( 1.5625rem , 1.2644508671rem  +  1.2716763006vw , 2.25rem )) {
+@supports (line-height: clamp( 1.575rem , 1.2823699422rem  +  1.2485549133vw , 2.25rem )) {
   .hero__year {
-    line-height: clamp( 1.5625rem , 1.2644508671rem  +  1.2716763006vw , 2.25rem );
+    line-height: clamp( 1.575rem , 1.2823699422rem  +  1.2485549133vw , 2.25rem );
   }
 }
-@supports not (line-height: clamp( 1.5625rem , 1.2644508671rem  +  1.2716763006vw , 2.25rem )) {
+@supports not (line-height: clamp( 1.575rem , 1.2823699422rem  +  1.2485549133vw , 2.25rem )) {
   .hero__year {
-    line-height: calc(1.5625rem + 0.6875 * (100vw - 23.4375rem) / 54.0625);
+    line-height: calc(1.575rem + 0.675 * (100vw - 23.4375rem) / 54.0625);
   }
 }
 .hero__title {
-  margin-bottom: 20px;
+  margin-bottom: 26px;
   font-size: 70px;
   font-weight: 700;
 }
@@ -1266,6 +1311,11 @@ body#sell-body::before {
 @supports not (line-height: clamp( 2.25rem , 1.3287572254rem  +  3.9306358382vw , 4.375rem )) {
   .hero__title {
     line-height: calc(2.25rem + 2.125 * (100vw - 23.4375rem) / 54.0625);
+  }
+}
+@media (max-width: 48em) {
+  .hero__title {
+    margin-bottom: 10px;
   }
 }
 .hero__desc {
@@ -1291,6 +1341,11 @@ body#sell-body::before {
     line-height: calc(1.5625rem + 0.6875 * (100vw - 23.4375rem) / 54.0625);
   }
 }
+@media (max-width: 48em) {
+  .hero__desc {
+    margin-bottom: 20px;
+  }
+}
 .hero__tags {
   justify-content: center;
 }
@@ -1299,6 +1354,7 @@ body#sell-body::before {
 }
 .hero__slide {
   transition: opacity 0.3s ease 0s;
+  width: 100%;
 }
 .hero__slide:not(:first-child) {
   opacity: 0;
@@ -1393,11 +1449,25 @@ body#sell-body::before {
   }
 }
 .nuero-about__aside-title {
+  color: #fff;
+  line-height: 1.2;
+  font-weight: 700;
   margin-bottom: 20px;
+}
+@supports (font-size: clamp( 1.25rem , 0.9790462428rem  +  1.1560693642vw , 1.875rem )) {
+  .nuero-about__aside-title {
+    font-size: clamp( 1.25rem , 0.9790462428rem  +  1.1560693642vw , 1.875rem );
+  }
+}
+@supports not (font-size: clamp( 1.25rem , 0.9790462428rem  +  1.1560693642vw , 1.875rem )) {
+  .nuero-about__aside-title {
+    font-size: calc(1.25rem + 0.625 * (100vw - 23.4375rem) / 54.0625);
+  }
 }
 @media (max-width: 48em) {
   .nuero-about__aside-title {
     margin-bottom: 10px;
+    line-height: 160%;
   }
 }
 @media (max-width: 48em) {
@@ -2869,4 +2939,12 @@ body#sell-body::before {
 
 .swiper-button-lock {
   display: none !important;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform, opacity;
 }
