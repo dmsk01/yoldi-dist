@@ -2679,6 +2679,11 @@ body#sell-body::before {
   border-radius: 10px;
   overflow: hidden;
 }
+@media (max-width: 48em) {
+  .sell-mobile-version__image-ibg {
+    border-radius: 2px;
+  }
+}
 .swiper {
   overflow: hidden;
 }
