@@ -1,689 +1,241 @@
 <!DOCTYPE html>
 <html lang="ru">
-<!-- In order to highlight active header link pass in title exactly equal link text content -->
 
 <head>
-	<title>Nuero</title>
-	<meta charset="UTF-8" />
-	<meta name="format-detection" content="telephone=no" />
+	<title>Medialand</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220421225104" />
-	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20220427120637">
+	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-
-<body id="nuero-body">
+<body id="medialand-home">
 	<div class="wrapper">
 		<header class="header">
-			<div class="header__wrapper">
-				<div class="header__container">
-					<div class="header__row">
-						<div class="header__logo">
-							<svg viewBox="0 0 108 68" width="108" height="68" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M10.6286 49.6509C9.91286 49.6509 9.50932 49.2626 9.50932 48.5712V36.4211L0.194934 20.7238C-0.254289 19.9472 0.103566 19.4286 0.953789 19.4286H6.68708C7.31396 19.4286 7.7175 19.6892 7.98399 20.2052L13.0929 29.6321L18.1968 20.2052C18.4633 19.6892 18.8668 19.4286 19.4937 19.4286H25.227C26.0772 19.4286 26.4351 19.9472 25.9884 20.7238L16.674 36.4211V49.6233" fill="#2F2F39" />
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M101.455 48.5708V29.1437C101.455 28.4513 101.848 28.0636 102.546 28.0636H106.909C107.608 28.0636 108.001 28.4513 108.001 29.1437V48.5708C108.001 49.2607 107.608 49.6509 106.909 49.6509H102.546C101.848 49.6509 101.455 49.2607 101.455 48.5708Z" fill="#2F2F39" />
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M40.1168 39.9393C40.1168 37.0376 37.8506 35.1148 34.9068 35.1148C31.9629 35.1148 29.6992 37.0376 29.6992 39.9393C29.6992 42.841 31.9629 44.7613 34.9068 44.7613C37.8506 44.7613 40.1168 42.841 40.1168 39.9393ZM22.9092 39.9394C22.9092 33.8472 28.2497 29.1432 34.9079 29.1432C41.566 29.1432 46.9091 33.8472 46.9091 39.9394C46.9091 46.0315 41.566 50.7305 34.9079 50.7305C28.2497 50.7305 22.9092 46.0315 22.9092 39.9394Z" fill="#2F2F39" />
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M53.4551 49.6509V20.5396C53.4551 19.8299 53.8492 19.4286 54.5456 19.4286H58.9076C59.6064 19.4286 60.0005 19.8299 60.0005 20.5396V48.5474C60.0005 49.2521 59.6064 49.6509 58.9076 49.6509" fill="#2F2F39" />
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M88.0849 34.5412C88.0849 29.3591 84.7167 26.0749 79.8428 26.0749H73.6367V43.0024H79.8428C84.7167 43.0024 88.0849 39.7182 88.0849 34.5412ZM79.8429 19.4286C88.3941 19.4286 94.9094 25.9895 94.9094 34.541C94.9094 43.0875 88.3941 49.6509 79.8429 49.6509H68.7629H67.6544C66.943 49.6509 66.5459 49.2598 66.5459 48.5729V20.5066C66.5459 19.8172 66.943 19.4286 67.6544 19.4286" fill="#2F2F39" />
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M101.455 23.6787V20.5753C101.455 19.8403 101.848 19.4286 102.546 19.4286H106.909C107.608 19.4286 108.001 19.8403 108.001 20.5753V23.6787C108.001 24.4111 107.608 24.8255 106.909 24.8255H102.546C101.848 24.8255 101.455 24.4111 101.455 23.6787Z" fill="#2F2F39" />
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M31.6348 23.6787V20.5753C31.6348 19.8403 32.0324 19.4286 32.7395 19.4286H45.8027C46.5098 19.4286 46.9074 19.8403 46.9074 20.5753V23.6787C46.9074 24.4111 46.5098 24.8255 45.8027 24.8255H32.7395C32.0324 24.8255 31.6348 24.4111 31.6348 23.6787Z" fill="#2F2F39" />
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M108 11.873C101.183 11.873 97.7119 10.0977 94.8306 8.67248C92.391 7.46629 90.6317 6.59501 86.6661 6.59501C82.6981 6.59501 80.9387 7.46629 78.5017 8.67248C75.6179 10.0977 72.0313 11.873 65.3301 11.873C58.6288 11.873 55.0423 10.0977 52.1585 8.67248C49.724 7.46629 47.9621 6.59501 43.9966 6.59501C40.031 6.59501 38.2691 7.46629 35.8346 8.67248C32.9533 10.0977 29.3643 11.873 22.663 11.873C15.9618 11.873 12.2573 10.0977 9.37349 8.67248C6.93645 7.46629 5.03902 6.59501 1.09106 6.59501V0C7.90775 0 11.4993 1.77277 14.3806 3.20056C16.8176 4.40675 18.6398 5.27551 22.6028 5.27551C26.5683 5.27551 28.3603 4.40675 30.7974 3.20056C33.6787 1.77277 37.2803 0 43.9815 0C50.6827 0 54.2768 1.77277 57.1581 3.20056C59.5951 4.40675 61.3621 5.27551 65.3276 5.27551C69.2931 5.27551 71.055 4.40675 73.4921 3.20056C76.3733 1.77277 79.9649 0 86.6661 0C93.3649 0 96.9539 1.77277 99.8352 3.20056C102.272 4.40675 104.054 5.27551 108 5.27551V11.873Z" fill="#2F2F39" />
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M108 67.873C101.183 67.873 97.7119 66.0977 94.8306 64.6725C92.391 63.4663 90.6317 62.595 86.6661 62.595C82.6981 62.595 80.9387 63.4663 78.5017 64.6725C75.6179 66.0977 72.0313 67.873 65.3301 67.873C58.6288 67.873 55.0423 66.0977 52.1585 64.6725C49.724 63.4663 47.9621 62.595 43.9966 62.595C40.031 62.595 38.2691 63.4663 35.8346 64.6725C32.9533 66.0977 29.3643 67.873 22.663 67.873C15.9618 67.873 12.2573 66.0977 9.37349 64.6725C6.93645 63.4663 5.03902 62.595 1.09106 62.595V56C7.90775 56 11.4993 57.7728 14.3806 59.2006C16.8176 60.4067 18.6398 61.2755 22.6028 61.2755C26.5683 61.2755 28.3603 60.4067 30.7974 59.2006C33.6787 57.7728 37.2803 56 43.9815 56C50.6827 56 54.2768 57.7728 57.1581 59.2006C59.5951 60.4067 61.3621 61.2755 65.3276 61.2755C69.2931 61.2755 71.055 60.4067 73.4921 59.2006C76.3733 57.7728 79.9649 56 86.6661 56C93.3649 56 96.9539 57.7728 99.8352 59.2006C102.272 60.4067 104.054 61.2755 108 61.2755V67.873Z" fill="#2F2F39" />
-							</svg>
-						</div>
-						<div class="header__body">
-							<div class="header__main">
-								<div data-tabs class="header__menu menu-tabs">
-									<nav tabindex="1" data-tabs-titles class="menu-tabs__navigation">
-										<button type="button" class="menu-tabs__title">
-											Направления
-										</button>
-										<button type="button" class="menu-tabs__title">
-											Процессы
-										</button>
-										<button type="button" class="menu-tabs__title">
-											Компания
-										</button>
-										<button type="button" class="menu-tabs__title _tab-active">
-											Кейсы
-										</button>
-									</nav>
-									<div data-tabs-body class="menu-tabs__content">
-										<nav class="menu-tabs__body">
-											<ul class="menu-tabs__submenu">
-												<li class="menu-tabs__subitem">
-													<a href="#" class="menu-tabs__link">Стартапы</a>
-												</li>
-												<li class="menu-tabs__subitem">
-													<a href="#" class="menu-tabs__link">Веб сервисы</a>
-												</li>
-												<li class="menu-tabs__subitem">
-													<a href="#" class="menu-tabs__link">E-commerce</a>
-												</li>
-												<li class="menu-tabs__subitem">
-													<a href="#" class="menu-tabs__link">Корп. сайты</a>
-												</li>
-												<li class="menu-tabs__subitem">
-													<a href="#" class="menu-tabs__link">Личные кабинеты</a>
-												</li>
-												<li class="menu-tabs__subitem">
-													<a href="#" class="menu-tabs__link">Приложения</a>
-												</li>
-												<li class="menu-tabs__subitem">
-													<a href="#" class="menu-tabs__link">Брендинг</a>
-												</li>
-											</ul>
-										</nav>
-										<nav class="menu-tabs__body">
-											<ul class="menu-tabs__submenu">
-												<li class="menu-tabs__subitem">
-													<a href="#" class="menu-tabs__link">Исследования и
-														аналитика</a>
-												</li>
-												<li class="menu-tabs__subitem">
-													<a href="#" class="menu-tabs__link">Брендинг</a>
-												</li>
-												<li class="menu-tabs__subitem">
-													<a href="#" class="menu-tabs__link">Проектирование и
-														дизайн</a>
-												</li>
-												<li class="menu-tabs__subitem">
-													<a href="#" class="menu-tabs__link">Разработка</a>
-												</li>
-												<li class="menu-tabs__subitem">
-													<a href="#" class="menu-tabs__link">Запуск</a>
-												</li>
-											</ul>
-										</nav>
-										<nav class="menu-tabs__body">
-											<ul class="menu-tabs__submenu">
-												<li class="menu-tabs__subitem">
-													<a href="#" class="menu-tabs__link">Контакты</a>
-												</li>
-												<li class="menu-tabs__subitem">
-													<a href="#" class="menu-tabs__link">Клиенты</a>
-												</li>
-												<li class="menu-tabs__subitem">
-													<a href="#" class="menu-tabs__link">Команда</a>
-												</li>
-												<li class="menu-tabs__subitem">
-													<a href="#" class="menu-tabs__link">Ценообразование</a>
-												</li>
-												<li class="menu-tabs__subitem">
-													<a href="#" class="menu-tabs__link">Философия</a>
-												</li>
-												<li class="menu-tabs__subitem">
-													<a href="#" class="menu-tabs__link">История</a>
-												</li>
-												<li class="menu-tabs__subitem">
-													<a href="#" class="menu-tabs__link">Работа</a>
-												</li>
-											</ul>
-										</nav>
-										<nav class="menu-tabs__body">
-											<ul class="menu-tabs__submenu">
-												<li class="menu-tabs__subitem">
-													<a href="#" class="menu-tabs__link">Пункт 1</a>
-												</li>
-												<li class="menu-tabs__subitem">
-													<a href="sell.html" class="menu-tabs__link">Продавай РФ</a>
-												</li>
-												<li class="menu-tabs__subitem">
-													<a href="index.html" class="menu-tabs__link">Nuero</a>
-												</li>
-											</ul>
-										</nav>
-									</div>
-								</div>
-							</div>
-							<aside tabindex="2" class="header__aside">
-								<a href="tel:+78124073559" class="header__number">
-									<span>+7 (812) 407-35-59</span>
-								</a>
-								<span class="header__lang">
-									<a href="#" class="header__eng-page">English, please</a>
-								</span>
-							</aside>
-							<button type="button" class="icon-menu">
-								<span></span>
-							</button>
-						</div>
-					</div>
-				</div>
+			<div class="header_desc">
+				<picture><source srcset="img/medialand/header.webp" type="image/webp"><img src="img/medialand/header.png" alt="Header"></picture>
+			</div>
+			<div class="header_mob">
+				<picture><source srcset="img/medialand/header-mob.webp" type="image/webp"><img src="img/medialand/header-mob.png" alt="Header mob"></picture>
 			</div>
 		</header>
-		<main class="page nuero-page">
-			<section class="hero">
+		<main class="page medialand-home">
+			<section class="medialand-hero hero">
 				<div class="hero__container">
-					<div class="hero__info">
-						<time datetime="2021-01-01 00:00" class="hero__year">2021</time>
-						<h1 class="hero__title">Nuero</h1>
-						<p class="hero__desc">
-							NFT маркетплейс современного, цифрового и классического искусства
-						</p>
-						<ul class="hero__tags tags">
-							<li class="tags__item">
-								<span class="tag">Маркетплейс</span>
-							</li>
-							<li class="tags__item">
-								<span class="tag">Blockchain</span>
-							</li>
-							<li class="tags__item">
-								<span class="tag">NFT</span>
-							</li>
-							<li class="tags__item">
-								<span class="tag">Ethereum</span>
-							</li>
-							<li class="tags__item">
-								<span class="tag">Typescript</span>
-							</li>
-							<li class="tags__item">
-								<span class="tag">PHP</span>
-							</li>
-						</ul>
+					<div class="hero__info info-hero">
+						<h1 class="info-hero__title">Medialand</h1>
+						<p class="info-hero__text text">Разработка веб сервиса по аренде и управлению серверами</p>
 					</div>
 					<div class="hero__content">
-						<div class="hero__slider swiper">
-							<div class="hero__wrapper swiper-wrapper">
-								<div class="hero__slide swiper-slide">
-									<div class="couple-images">
-										<div class="couple-images__inner">
-											<div class="couple-images__big-image">
-												<picture><source srcset="img/nuero/hero/01-1.webp" type="image/webp"><img src="img/nuero/hero/01-1.png" alt="Nuero art page desktop" /></picture>
-											</div>
-											<div class="couple-images__small-image">
-												<picture><source srcset="img/nuero/hero/01-2.webp" type="image/webp"><img src="img/nuero/hero/01-2.png" alt="Nuero art page mobile" /></picture>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="hero__slide swiper-slide">
-									<div class="couple-images">
-										<div class="couple-images__inner">
-											<div class="couple-images__big-image">
-												<picture><source data-srcset="img/nuero/hero/02-1.webp" type="image/webp"><img class="lazyload" data-src="img/nuero/hero/02-1.png" loading="lazy" alt="Nuero art page desktop" /></picture>
-											</div>
-											<div class="couple-images__small-image">
-												<picture><source data-srcset="img/nuero/hero/02-2.webp" type="image/webp"><img class="lazyload" data-src="img/nuero/hero/02-2.png" loading="lazy" alt="Nuero art page mobile" /></picture>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="hero__slide swiper-slide">
-									<div class="couple-images">
-										<div class="couple-images__inner">
-											<div class="couple-images__big-image">
-												<picture><source data-srcset="img/nuero/hero/03-1.webp" type="image/webp"><img class="lazyload" data-src="img/nuero/hero/03-1.png" loading="lazy" alt="Nuero art page desktop" /></picture>
-											</div>
-											<div class="couple-images__small-image">
-												<picture><source data-srcset="img/nuero/hero/03-2.webp" type="image/webp"><img class="lazyload" data-src="img/nuero/hero/03-2.png" loading="lazy" alt="Nuero art page mobile" /></picture>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="hero__slide swiper-slide">
-									<div class="couple-images">
-										<div class="couple-images__inner">
-											<div class="couple-images__big-image">
-												<picture><source data-srcset="img/nuero/hero/04-1.webp" type="image/webp"><img class="lazyload" data-src="img/nuero/hero/04-1.png" loading="lazy" alt="Nuero art page desktop" /></picture>
-											</div>
-											<div class="couple-images__small-image">
-												<picture><source data-srcset="img/nuero/hero/04-2.webp" type="image/webp"><img class="lazyload" data-src="img/nuero/hero/04-2.png" loading="lazy" alt="Nuero art page mobile" /></picture>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="hero__slide swiper-slide">
-									<div class="couple-images">
-										<div class="couple-images__inner">
-											<div class="couple-images__big-image">
-												<picture><source data-srcset="img/nuero/hero/05-1.webp" type="image/webp"><img class="lazyload" data-src="img/nuero/hero/05-1.png" loading="lazy" alt="Nuero art page desktop" /></picture>
-											</div>
-											<div class="couple-images__small-image">
-												<picture><source data-srcset="img/nuero/hero/05-2.webp" type="image/webp"><img class="lazyload" data-src="img/nuero/hero/05-2.png" loading="lazy" alt="Nuero art page mobile" /></picture>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="hero__slide swiper-slide">
-									<div class="couple-images">
-										<div class="couple-images__inner">
-											<div class="couple-images__big-image">
-												<picture><source data-srcset="img/nuero/hero/06-1.webp" type="image/webp"><img class="lazyload" data-src="img/nuero/hero/06-1.png" loading="lazy" alt="Nuero art page desktop" /></picture>
-											</div>
-											<div class="couple-images__small-image">
-												<picture><source data-srcset="img/nuero/hero/06-2.webp" type="image/webp"><img class="lazyload" data-src="img/nuero/hero/06-2.png" loading="lazy" alt="Nuero art page mobile" /></picture>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="hero__paggination swiper-pagination"></div>
+						<div class="hero__image-ibg">
+							<picture><source srcset="img/medialand/home/hero/1.webp" type="image/webp"><img src="img/medialand/home/hero/1.png" alt="Medialand website hero section"></picture>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="nuero-about">
-				<div class="nuero-about__container">
-					<div class="nuero-about__project">
-						<main class="nuero-about__main">
-							<h2 class="nuero-about__title title">О проекте</h2>
-							<p class="nuero-about__text text">Маркетплейс представляет собой цифровой рынок искусства. Он позволяет художникам размещать свои арты и использовать <span>Nuero</span> как витрину для показа своих работ, привлечения внимания аудитории, а также в качестве торговой площадки. Пользователи могут обмениваться работами, торговать ими по фиксированной цене или проводить аукционы.</p>
-							<p class="nuero-about__text text">Все операции, производимые на маркетплейсе используют смарт контракт сети Ethereum.</p>
-						</main>
-						<aside class="nuero-about__nft">
-							<h3 class="nuero-about__aside-title subtitle">Что такое NFT?</h3>
-							<p class="nuero-about__text text">NFT — новое, активно развивающиеся направление, позволяющее становиться владельцем цифровых активов за криптовалюту.</p>
-							<p class="nuero-about__text text">NFT переводится как “Невзаимозаменяемый токен” (non-fungible token), что означает уникальность приобретаемого актива.</p>
-						</aside>
-					</div>
-					<div class="nuero-about__users users-about">
-						<div class="users-about__head">
-							<h3 class="users-about__title subtitle subtitle_dark subtitle_noshrink">Пользователи</h3>
-						</div>
-						<div class="users-about__inner">
-							<div class="users-about__user about-user">
-								<h4 class="about-user__title subtitle subtitle_dark subtitle_thin">Художники</h4>
-								<p class="about-user__desc text text_dark">Творческие люди и авторы работ, которые создают и показывают цифровые картины, выставляют их на продажу</p>
+			<section class="medialand-about">
+				<div class="medialand-about__container">
+					<article class="medialand-about__info info-block">
+						<h2 class="info-block__title title">О проекте</h2>
+						<p class="info-block__text text">Провайдер серверов с хорошей репутацией успешно функционирует за счет сарафанки и
+							топиков на форумах. Компания хочет автоматизировать процессы, чтобы начать рекламироватьи масштабировать проект.
+						</p>
+					</article>
+					<div class="medialand-about__target target-about">
+						<div class="target-about__row">
+							<div class="target-about__column">
+								<div class="target-about__automatisation">
+									<h3 class="target-about__heading subtitle">Автоматизация процессов:</h3>
+									<ul class="target-about__list">
+										<li class="target-about__item text">Аренда и запуск серверов</li>
+										<li class="target-about__item text">Выставление счетов</li>
+										<li class="target-about__item text">Техподдержка</li>
+									</ul>
+								</div>
 							</div>
-							<div class="users-about__user about-user">
-								<h4 class="about-user__title subtitle subtitle_dark subtitle_thin">Покупатели</h4>
-								<p class="about-user__desc text text_dark">Коллекционеры, ценители искусства, которые собирают свои коллекции, либо спекулянты, которые покупают и перепродают перспективные работы с целью заработка</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+							<div class="target-about__column">
+								<div class="target-about__aim">
+									<h3 class="target-about__heading subtitle subtitle_yellow">Цель</h3>
+									<p class="target-about__text text">Выйти в топ рынка по аренде серверов в течении года после запуска</p>
+								</div>
 
-			<section class="nuero-composition">
-				<div class="nuero-composition__container">
-					<header class="nuero-composition__header">
-						<h2 class="nuero-composition__title">Состав проекта</h2>
-						<ul class="nuero-composition__tags tags">
-							<li class="tags__item">
-								<a data-goto="#catalog-nuero" href="#catalog-nuero" class="tag tag_yellow">Каталог</a>
-							</li>
-							<li class="tags__item">
-								<a data-goto="#operations-nuero" href="#operations-nuero" class="tag">Операции</a>
-							</li>
-							<li class="tags__item">
-								<a data-goto="#bid-tracking" href="#bid-tracking" class="tag">Торги</a>
-							</li>
-							<li class="tags__item">
-								<a data-goto="#verification" href="#verification" class="tag">Верификация</a>
-							</li>
-							<li class="tags__item">
-								<a data-goto="#nuero-users-catalog" href="#nuero-users-catalog" class="tag">Пользователи</a>
-							</li>
-							<li class="tags__item">
-								<a data-goto="#nuero-chats" href="#nuero-chats" class="tag">Чаты</a>
-							</li>
-							<li class="tags__item">
-								<a data-goto="#journal-nuero" href="#journal-nuero" class="tag">Журнал</a>
-							</li>
-							<li class="tags__item">
-								<a data-goto="#nuero-feed-line" href="#nuero-feed-line" class="tag">Лента</a>
-							</li>
+							</div>
+						</div>
+
+					</div>
+					<div class="medialand-about__task">
+						<div class="info-block">
+							<h2 class="info-block__title title">Задача</h2>
+							<p class="info-block__text text">Разработать веб сервис для масштабирования бизнеса клиентаи автоматизации
+								процессов</p>
+						</div>
+					</div>
+					<div class="medialand-about__requirements requirements-about">
+						<h3 class="requirements-about__heading subtitle">Требования</h3>
+						<ul class="requirements-about__list">
+							<li class="requirements-about__item text">Простой, интуитивно понятный интерфейс</li>
+							<li class="requirements-about__item text">Пользователь должен иметь возможность легко выбрать услугу и сразу
+								приступить к работе</li>
+							<li class="requirements-about__item text">Современный минималистичный дизайн</li>
 						</ul>
-					</header>
-					<div class="nuero-composition__main nuero-main-composition">
-						<article id="catalog-nuero" class="nuero-main-composition__catalog">
-							<div class="nuero-main-composition__info">
-								<h3 class="nuero-main-composition__title title">Каталог артов</h3>
-								<p class="nuero-main-composition__text text">
-									На странице с каталогом артов пользователь может посмотреть
-									актуальные работы разных авторов. На карточки сразу выводится
-									информация о цене и владельце, что может помочь принять решение о
-									покупке. При необходимости пользователь может воспользоваться
-									фильтрами и поиском по популярным тегам.
-								</p>
-							</div>
-							<div class="nuero-main-composition__content">
-								<div class="couple-images">
-									<div class="couple-images__inner">
-										<div class="couple-images__big-image">
-											<picture><source data-srcset="img/nuero/hero/02-1.webp" type="image/webp"><img class="lazyload" loading="lazy" data-src="img/nuero/hero/02-1.png" alt="Nuero art page desktop" /></picture>
-										</div>
-										<div class="couple-images__small-image">
-											<picture><source data-srcset="img/nuero/hero/02-2.webp" type="image/webp"><img class="lazyload" loading="lazy" data-src="img/nuero/hero/02-2.png" alt="Nuero art page mobile" /></picture>
-										</div>
-									</div>
-								</div>
-							</div>
-						</article>
-
-						<article id="art-page" class="nuero-main-composition__art-page art-page">
-							<div class="art-page__info info-block">
-								<div class="info-block__heading">
-									<h3 class="info-block__title title">Страница арта</h3>
-								</div>
-								<div class="info-block__content">
-									<p class="info-block__text text">
-										На странице арта находится более подробная информация по каждому
-										арту. Тут отображается описание, технические характеристики,
-										финансовые показатели и прочая информация.
-									</p>
-								</div>
-							</div>
-							<div class="art-page__content">
-								<div class="couple-images">
-									<div class="couple-images__inner">
-										<div class="couple-images__big-image">
-											<picture><source data-srcset="img/nuero/hero/01-1.webp" type="image/webp"><img class="lazyload" loading="lazy" data-src="img/nuero/hero/01-1.png" alt="Nuero art page desktop" /></picture>
-										</div>
-										<div class="couple-images__small-image">
-											<picture><source data-srcset="img/nuero/hero/01-2.webp" type="image/webp"><img class="lazyload" loading="lazy" data-src="img/nuero/hero/01-2.png" alt="Nuero art page mobile" /></picture>
-										</div>
-									</div>
-								</div>
-							</div>
-							<p class="art-page__text text">
-								Из финансовых показателей на этой странице можно узнать, насколько арт
-								подорожал с момента, как его разместили на маркетплейсе. А еще на этой
-								странице можно увидеть всю историю активностей и комментарии других
-								пользователей.
-							</p>
-							<div class="art-page__activities-history">
-								<div class="activities-history swiper-activities-history">
-									<div class="activities-history__wrapper swiper-wrapper">
-										<div class="activities-history__activity swiper-slide">
-											<picture><source data-srcset="img/nuero/art-page/01.webp" type="image/webp"><img class="lazyload" loading="lazy" data-src="img/nuero/art-page/01.png" alt="Transaction activities history" /></picture>
-										</div>
-										<div class="activities-history__activity swiper-slide">
-											<picture><source data-srcset="img/nuero/art-page/02.webp" type="image/webp"><img class="lazyload" loading="lazy" data-src="img/nuero/art-page/02.png" alt="Transaction activities history" /></picture>
-										</div>
-										<div class="activities-history__activity swiper-slide">
-											<picture><source data-srcset="img/nuero/art-page/03.webp" type="image/webp"><img class="lazyload" loading="lazy" data-src="img/nuero/art-page/03.png" alt="Transaction activities history" /></picture>
-										</div>
-									</div>
-								</div>
-							</div>
-						</article>
-
-						<article id="operations-nuero" class="nuero-main-composition__transaction-operations transaction-composition">
-							<div class="transaction-composition__info info-block info-block_long">
-								<div class="info-block__heading">
-									<h3 class="transaction-composition__title info-block__title title">
-										Операции&nbsp;и транзакции
-									</h3>
-								</div>
-								<div class="info-block__content">
-									<p class="info-block__text text">
-										Все виды обмена используют смарт-контракты Etereum. Пользователи
-										могут выставлять свои арты в маркет и назначать на них стоимость.
-									</p>
-									<p class="info-block__text text">
-										Помимо продажи по фиксированной стоимости, предусмотрена
-										возможность начать аукцион, указав стартовую цену. В таком случае,
-										с момента первой ставки начнется обратный отсчет — 24 часа. В
-										последние 15 минут аукциона новые ставки сбрасывают обратный
-										отсчет на 15 минут — это может дополнительно разогреть аукцион и
-										стоимость лота.
-									</p>
-								</div>
-							</div>
-							<div class="transaction-composition__content">
-								<div class="couple-images">
-									<div class="couple-images__inner">
-										<div class="couple-images__big-image">
-											<picture><source data-srcset="img/nuero/transactions-page/01.webp" type="image/webp"><img class="lazyload" loading="lazy" data-src="img/nuero/transactions-page/01.png" alt="Nuero art page desktop" /></picture>
-										</div>
-										<div class="couple-images__small-image">
-											<picture><source data-srcset="img/nuero/transactions-page/02.webp" type="image/webp"><img class="lazyload" loading="lazy" data-src="img/nuero/transactions-page/02.png" alt="Nuero art page mobile" /></picture>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="transaction-composition__bottom-info transaction-bottom">
-								<div class="transaction-bottom__inner">
-									<p class="transaction-bottom__text text">
-										Если какой либо арт не выставлен на продажу, другой пользователь
-										может предложить за него стоимость — в таком случае владелец
-										получит уведомление, и сможет при желании согласиться.
-									</p>
-									<div class="transaction-bottom__images couple-small-images">
-										<div class="couple-small-images__inner">
-											<div class="couple-small-images__big-image">
-												<picture><source data-srcset="img/nuero/transactions-page/03.webp" type="image/webp"><img class="lazyload" loading="lazy" data-src="img/nuero/transactions-page/03.png" alt="Art bit price offer" /></picture>
-											</div>
-											<div class="couple-small-images__small-image">
-												<picture><source data-srcset="img/nuero/transactions-page/04.webp" type="image/webp"><img class="lazyload" loading="lazy" data-src="img/nuero/transactions-page/04.png" alt="Art bit price offer" /></picture>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</article>
-
-						<article id="bid-tracking" class="nuero-main-composition__bid-tracking bid-tracking">
-							<div class="bid-tracking__info info-block">
-								<div class="info-block__heading">
-									<h3 class="info-block__title title">Отслеживание торгов</h3>
-								</div>
-								<div class="info-block__content">
-									<p class="info-block__text text">
-										Свои активности по маркету пользователи могут отслеживать в разделе
-										Торги. Тут хранится вся история покупок и продаж, предложений и
-										участия в аукционах.
-									</p>
-								</div>
-							</div>
-							<div class="bid-tracking__content">
-								<div class="couple-images">
-									<div class="couple-images__inner">
-										<div class="couple-images__big-image">
-											<picture><source data-srcset="img/nuero/bid-tracking-page/01.webp" type="image/webp"><img class="lazyload" loading="lazy" data-src="img/nuero/bid-tracking-page/01.png" alt="Nuero art page desktop" /></picture>
-										</div>
-										<div class="couple-images__small-image">
-											<picture><source data-srcset="img/nuero/bid-tracking-page/02.webp" type="image/webp"><img class="lazyload" loading="lazy" data-src="img/nuero/bid-tracking-page/02.png" alt="Nuero art page mobile" /></picture>
-										</div>
-									</div>
-								</div>
-							</div>
-						</article>
-
-						<article id="verification" class="nuero-main-composition__artists-verification artists-verification">
-							<div class="artists-verification__info info-block">
-								<div class="info-block__heading">
-									<h3 class="info-block__title title">Верификация художников</h3>
-								</div>
-								<div class="info-block__content">
-									<p class="info-block__text text">
-										Площадка Nuero ответственно подходит к размещаемому на ней контенту.
-										Процедура верификации художников обеспечивает наличие в маркете
-										работ, имеющих высокую художественную ценность. Для того, чтобы арты
-										попали в маркет автор должен пройти верификацию — заполнить свой
-										профиль и указать соцсети.
-									</p>
-								</div>
-							</div>
-							<div class="artists-verification__content">
-								<div class="triple-images">
-									<div class="triple-images__inner">
-										<div class="triple-images__left-big-image">
-											<picture><source data-srcset="img/nuero/artists-verification/01.webp" type="image/webp"><img class="lazyload" loading="lazy" data-src="img/nuero/artists-verification/01.png" alt="Artists verification" /></picture>
-										</div>
-										<div class="triple-images__right-big-image">
-											<picture><source data-srcset="img/nuero/artists-verification/02.webp" type="image/webp"><img class="lazyload" loading="lazy" data-src="img/nuero/artists-verification/02.png" alt="Artists verification" /></picture>
-										</div>
-										<div class="triple-images__small-image">
-											<picture><source data-srcset="img/nuero/artists-verification/03.webp" type="image/webp"><img class="lazyload" loading="lazy" data-src="img/nuero/artists-verification/03.png" alt="Artists verification" /></picture>
-										</div>
-									</div>
-								</div>
-							</div>
-						</article>
-
-						<article id="nuero-users-catalog" class="nuero-main-composition__users-catalog users-catalog">
-							<div class="users-catalog__info info-block info-block_long">
-								<div class="info-block__heading">
-									<h3 class="info-block__title title">Каталог пользователей</h3>
-								</div>
-								<div class="info-block__content">
-									<p class="info-block__text users-catalog__text text">
-										Пользователи могут находить людей и следить за интересными авторами
-										и коллекционерами, чтобы получать актуальные обновления по их
-										публикациям, новым работам и приобритениям.
-									</p>
-								</div>
-							</div>
-							<div class="users-catalog__content">
-								<div class="couple-images">
-									<div class="couple-images__inner">
-										<div class="couple-images__big-image">
-											<picture><source data-srcset="img/nuero/hero/05-1.webp" type="image/webp"><img class="lazyload" loading="lazy" data-src="img/nuero/hero/05-1.png" alt="Users list" /></picture>
-										</div>
-										<div class="couple-images__small-image">
-											<picture><source data-srcset="img/nuero/hero/05-2.webp" type="image/webp"><img class="lazyload" loading="lazy" data-src="img/nuero/hero/05-2.png" alt="Users list" /></picture>
-										</div>
-									</div>
-								</div>
-							</div>
-						</article>
-
-						<article class="nuero-main-composition__users-page users-page">
-							<div class="users-page__info info-block">
-								<div class="info-block__heading">
-									<h3 class="info-block__title title">Cтраница пользователя</h3>
-								</div>
-								<div class="info-block__content">
-									<p class="info-block__text text">
-										При помощи страницы пользователя можно узнать подробную информацию о
-										нем, посмотреть его коллекции, а также подписаться или написать
-										сообщение.
-									</p>
-								</div>
-							</div>
-							<div class="users-page__content">
-								<div class="couple-images couple-images_big">
-									<div class="couple-images__inner">
-										<div class="couple-images__big-image">
-											<picture><source data-srcset="img/nuero/user-page/01.webp" type="image/webp"><img class="lazyload" loading="lazy" data-src="img/nuero/user-page/01.png" alt="Update feed line" /></picture>
-										</div>
-										<div class="couple-images__small-image">
-											<picture><source data-srcset="img/nuero/user-page/02.webp" type="image/webp"><img class="lazyload" loading="lazy" data-src="img/nuero/user-page/02.png" alt="Update feed line mobile" /></picture>
-										</div>
-									</div>
-								</div>
-							</div>
-						</article>
-
-						<article id="nuero-chats" class="nuero-main-composition__chats chats-nuero">
-							<div class="chats-nuero__info info-block info-block_long">
-								<div class="info-block__heading">
-									<h3 class="info-block__title chats-nuero__title title">Чаты</h3>
-								</div>
-								<div class="info-block__content">
-									<p class="info-block__text text">
-										Nuero приветствует общение между участниками площадки — поэтому в
-										интерфейсе маркетплейса предусмотрен полноценный мессенджер.
-										Пользователи могут обмениваться сообщениями и прикреплять
-										изображения или ссылки на арты — чтобы познакомиться, обсудить какое
-										то событие или арт, а также договориться о покупке, либо обмене.
-									</p>
-								</div>
-							</div>
-							<div class="chats-nuero__content">
-								<div class="couple-images">
-									<div class="couple-images__inner">
-										<div class="couple-images__big-image">
-											<picture><source data-srcset="img/nuero/chats/01.webp" type="image/webp"><img class="lazyload" loading="lazy" data-src="img/nuero/chats/01.png" alt="Nuero chats page" /></picture>
-										</div>
-										<div class="couple-images__small-image">
-											<picture><source data-srcset="img/nuero/chats/02.webp" type="image/webp"><img class="lazyload" loading="lazy" data-src="img/nuero/chats/02.png" alt="Nuero chats page mobile" /></picture>
-										</div>
-									</div>
-								</div>
-							</div>
-						</article>
-
-						<article id="journal-nuero" class="nuero-main-composition__journal journal-nuero">
-							<div class="journal-nuero__info info-block">
-								<div class="info-block__heading">
-									<h3 class="info-block__title title">Журнал</h3>
-								</div>
-								<div class="info-block__content">
-									<p class="info-block__text text">
-										Маркетплейс предлагает своим пользователям полезный и интересный
-										контент на тему NFT искусства. Также пользователи могут создавать
-										свои статьи и наполнять ими раздел "Журнал".
-									</p>
-								</div>
-							</div>
-							<div class="journal-nuero__content">
-								<div class="couple-images couple-images_big">
-									<div class="couple-images__inner">
-										<div class="couple-images__big-image">
-											<picture><source data-srcset="img/nuero/magazine/01.webp" type="image/webp"><img class="lazyload" loading="lazy" data-src="img/nuero/magazine/01.png" alt="Journal page nuero art market" /></picture>
-										</div>
-										<div class="couple-images__small-image">
-											<picture><source data-srcset="img/nuero/magazine/02.webp" type="image/webp"><img class="lazyload" loading="lazy" data-src="img/nuero/magazine/02.png" alt="Journal page nuero art market mobile" /></picture>
-										</div>
-									</div>
-								</div>
-							</div>
-						</article>
-
-						<article id="nuero-feed-line" class="nuero-main-composition__update-feed-line update-feed-line">
-							<div class="update-feed-line__info info-block">
-								<div class="info-block__heading">
-									<h3 class="info-block__title title">Лента обновлений</h3>
-								</div>
-								<div class="info-block__content">
-									<p class="info-block__text text">
-										Все активности пользователей, включая продажи, ставки на аукционах и
-										публикации новых артов попадают в ленту обновлений — раздел “Новое”.
-									</p>
-								</div>
-							</div>
-							<div class="art-page__content">
-								<div class="couple-images">
-									<div class="couple-images__inner">
-										<div class="couple-images__big-image">
-											<picture><source data-srcset="img/nuero/update-feed/01.webp" type="image/webp"><img class="lazyload" loading="lazy" data-src="img/nuero/update-feed/01.png" alt="Update feed line" /></picture>
-										</div>
-										<div class="couple-images__small-image">
-											<picture><source data-srcset="img/nuero/update-feed/02.webp" type="image/webp"><img class="lazyload" loading="lazy" data-src="img/nuero/update-feed/02.png" alt="Update feed line mobile" /></picture>
-										</div>
-									</div>
-								</div>
-							</div>
-						</article>
 					</div>
+				</div>
+			</section>
+			<section class="medialand-composition">
+				<div class="medialand-composition__container">
+					<article class="composition-item">
+						<div class="composition-item__inner">
+							<div class="composition-item__column composition-item__column_image">
+								<div class="composition-item__image">
+									<picture><source srcset="img/medialand/home/search-and-analitics/1.webp" type="image/webp"><img src="img/medialand/home/search-and-analitics/1.png" alt="Search and analitics"></picture>
+								</div>
+							</div>
+							<div class="composition-item__column composition-item__column_info">
+								<div class="composition-item__info info-block">
+									<h2 class="info-block__title title">Исследования, аналитика</h2>
+									<p class="info-block__text text">Изучили аудиторию пользователей, составили портреты клиентов, проработали
+										сценари взаимодействия, проанализировали конкурентов и отобрали референсы, провели серию контекстных
+										интервью с будущими клиентами, выявили конкурентные преимущества.
+									</p>
+									<div class="info-block__button button-air">
+										<a href="search-and-analitics.html" class="button-air__body">
+											<span class="button-air__text">Читать подробнее</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article class="composition-item composition-item_reverse">
+						<div class="composition-item__inner">
+							<div class="composition-item__column composition-item__column_image">
+								<div class="composition-item__image">
+									<picture><source srcset="img/medialand/home/proto-and-design/1.webp" type="image/webp"><img src="img/medialand/home/proto-and-design/1.png" alt="Prototype and design"></picture>
+								</div>
+							</div>
+							<div class="composition-item__column composition-item__column_info">
+								<div class="composition-item__info info-block">
+									<h2 class="info-block__title title">Прототипы, дизайн</h2>
+									<p class="info-block__text text">
+										Спроектировали структуру и произвели комплексную визуальную упаковку проекта. Отрисовали более 80
+										уникальных страниц и экранов с учетом адаптива.
+									</p>
+									<div class="info-block__button button-air">
+										<a href="proto.html" class="button-air__body">
+											<span class="button-air__text">Читать подробнее</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article class="composition-item">
+						<div class="composition-item__inner">
+							<div class="composition-item__column composition-item__column_image">
+								<div class="composition-item__image">
+									<picture><source srcset="img/medialand/home/corporate-website/1.webp" type="image/webp"><img src="img/medialand/home/corporate-website/1.png" alt="Corporate website"></picture>
+								</div>
+							</div>
+							<div class="composition-item__column composition-item__column_info">
+								<div class="composition-item__info info-block">
+									<h2 class="info-block__title title">Корпоративный сайт</h2>
+									<p class="info-block__text text">Реализовали публичную часть, куда новые клиенты попадают с рекламы. Там они
+										изучают информацию о компании, дата центрах, продуктовой линейке и тарифах — все, что нужно для принятия
+										решения о дальнейшем использовании веб сервиса.
+									</p>
+									<div class="info-block__button button-air">
+										<a href="#" class="button-air__body">
+											<span class="button-air__text">Читать подробнее</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article class="composition-item composition-item_reverse">
+						<div class="composition-item__inner">
+							<div class="composition-item__column composition-item__column_image">
+								<div class="composition-item__image">
+									<picture><source srcset="img/medialand/home/control-panel/1.webp" type="image/webp"><img src="img/medialand/home/control-panel/1.png" alt="Website control panel"></picture>
+								</div>
+							</div>
+							<div class="composition-item__column composition-item__column_info">
+								<div class="composition-item__info info-block">
+									<h2 class="info-block__title title">Панель управления</h2>
+									<p class="info-block__text text">
+										Разработали удобный интерфейс для развертывания серверов, настройки и управления оборудованием.
+										Многофункциональная IT-инфраструктура, доступная для работы с любого девайса.</p>
+									<div class="info-block__button button-air">
+										<a href="#" class="button-air__body">
+											<span class="button-air__text">Читать подробнее</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article class="composition-item">
+						<div class="composition-item__inner">
+							<div class="composition-item__column composition-item__column_image">
+								<div class="composition-item__image">
+									<picture><source srcset="img/medialand/home/admin-panel/1.webp" type="image/webp"><img src="img/medialand/home/admin-panel/1.png" alt="Administrator panel"></picture>
+								</div>
+							</div>
+							<div class="composition-item__column composition-item__column_info">
+								<div class="composition-item__info info-block">
+									<h2 class="info-block__title title">Админ панель</h2>
+									<p class="info-block__text text">Реализовали многофункциональный интерфейс для управления сайтом и всей
+										сервисной частью. При помощи админ панели владелец имеет доступ к изменению параметров сайта, а служба
+										поддержки может помогать клиентам с настройкой серверов и сетевой инфраструктуры.</p>
+									<div class="info-block__button button-air">
+										<a href="#" class="button-air__body">
+											<span class="button-air__text">Читать подробнее</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
 				</div>
 			</section>
 			<section class="project-request">
 				<div class="project-request__container">
 					<div class="project-request__body">
-						<span class="project-request__thank subtitle subtitle_thin subtitle_dark">Спасибо за просмотр!</span>
-						<h2 class="project-request__callfor title title_dark">Интересует похожий проект?</h2>
-						<button class="project-request__button button button_soaring">
-							<span>Заявка на консультацию</span>
-						</button>
+						<h2 class="project-request__callfor">Интересует похожий проект?</h2>
+						<div class="project-request__button button-air">
+							<button class="button-air__body">
+								<span class="button-air__text">Заявка на консультацию</span>
+							</button>
+						</div>
 					</div>
 				</div>
 			</section>
-
 		</main>
 		<footer class="footer">
-			<div class="footer__container">
+			<div class="footer_desc">
+				<picture><source srcset="img/medialand/footer.webp" type="image/webp"><img src="img/medialand/footer.png" alt="Footer"></picture>
+			</div>
+			<div class="footer_mob">
+				<picture><source srcset="img/medialand/footer-mob.webp" type="image/webp"><img src="img/medialand/footer-mob.png" alt="Footer mob"></picture>
 			</div>
 		</footer>
 	</div>
-	<div class="float-block">
-		<div class="float-block__inner">
-			<div class="float-block__play">
-				<button class="float-block__button-play"></button>
-			</div>
-			<div class="float-block__ask">
-				<button class="float-block__button-ask">Задать вопрос...</button>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
 			</div>
 		</div>
 	</div>
+</div>
+ -->
 
-	<script src="js/app.min.js?_v=20220421225104"></script>
+	<script src="js/app.min.js?_v=20220427120637"></script>
 </body>
 
 </html>
